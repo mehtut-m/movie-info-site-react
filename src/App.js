@@ -1,4 +1,8 @@
-import Swiper from 'swiper';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
 
 import './App.scss';
 import Header from './components/header/Header';
