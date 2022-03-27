@@ -27,7 +27,7 @@ const tmdbApi = {
     return axios.get(url, params);
   },
   getVideos: (cate, id) => {
-    const url = `${category[cate]}/id/${tvType[id]}`;
+    const url = `${category[cate]}/${id}/videos`;
     return axios.get(url, { params: {} });
   },
   search: (cate, params) => {

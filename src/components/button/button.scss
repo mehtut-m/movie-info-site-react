@@ -8,7 +8,7 @@ button {
 .btn {
   border: 4px solid transparent;
   background-color: $main-color;
-  color: $white;
+  color: $white-color;
   border-radius: $border-radius;
   padding: 0.5rem 1.8rem;
   font-size: 1.5rem;
@@ -23,9 +23,9 @@ button {
 }
 
 .btn-outline {
-  border: 3px solid $white;
+  border: 3px solid $white-color;
   background-color: transparent;
-  color: $white;
+  color: $white-color;
   box-shadow: unset;
   transition: color 0.3s ease, background-color 0.3s ease;
 }
@@ -33,7 +33,7 @@ button {
 .btn-outline:hover {
   box-shadow: unset;
   color: $main-color;
-  background-color: $white;
+  background-color: $white-color;
 }
 
 .btn.small {

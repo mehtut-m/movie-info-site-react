@@ -1,5 +1,6 @@
 import React from 'react';
 import Proptypes from 'prop-types';
+import './button.scss';
 
 function Button(props) {
   return (
@@ -7,15 +8,18 @@ function Button(props) {
       onClick={props.onClick ? () => props.onClick() : null}
       className={`btn ${props.className}`}
     >
-      {props.chlidren}
+      {props.children}
     </button>
   );
 }
 
-const OutlineButton = (props) => {
+export const OutlineButton = (props) => {
   return (
-    <Button className={`btn-outline ${props.className}`}>
-      {props.chlidren}
+    <Button
+      onClick={props.onClick ? () => props.onClick() : null}
+      className={`btn-outline ${props.className}`}
+    >
+      {props.children}
     </Button>
   );
 };

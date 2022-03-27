@@ -60,7 +60,7 @@
         left: 50%;
         transform: translateX(-50%);
         width: 0;
-        transition: width 0.5s ease;
+        transition: width 0.3s ease-out;
         height: 2px;
         background-color: $main-color;
       }

@@ -7,7 +7,7 @@ axios.defaults.baseURL = apiConfig.baseUrl;
 
 axios.interceptors.request.use(
   (config) => {
-    config.headers.Authorization = 'Content-Type: ';
+    config.headers.Authorization = 'Content-Type: application/json';
     config.paramsSerializer = (params) =>
       queryString.stringify({ ...params, api_key: apiConfig.apiKey });
     return config;
