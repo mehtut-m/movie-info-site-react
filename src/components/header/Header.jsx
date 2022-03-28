@@ -25,9 +25,9 @@ function Header() {
       } else {
         headerRef.current.classList.remove('shrink');
       }
-
-      window.addEventListener('scroll', shrinkHeader);
     };
+    window.addEventListener('scroll', shrinkHeader);
+
     return () => {
       window.removeEventListener('scroll', shrinkHeader);
     };
