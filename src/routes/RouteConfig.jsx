@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 
 import Home from '../pages/Home';
-import Detail from '../pages/Detail';
+import Detail from '../pages/detail/Detail';
 import Catalog from '../pages/Catalog';
 
 function RouteConfig() {

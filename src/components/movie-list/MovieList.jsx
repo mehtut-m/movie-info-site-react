@@ -14,7 +14,6 @@ import './movie-list.scss';
 
 function MovieList(props) {
   const [items, setItems] = useState([]);
-  console.log(props.type);
   useEffect(() => {
     const getList = async () => {
       let response = null;
@@ -37,10 +36,9 @@ function MovieList(props) {
 
   return (
     <div className="movie-list">
-      <Swiper grabCursor={true} spaceBetween={10} slidesPerView={'auto'}>
+      <Swiper grabcursor="true" spaceBetween={10} slidesPerView={'auto'}>
         {items.map((item, index) => (
-          <SwiperSlide key={index} grabCursor={true}>
-            {/* <img src={apiConfig.w500Image(item.poster_path)} alt="" /> */}
+          <SwiperSlide key={index} grabcursor="true">
             <MovieCard item={item} category={props.category} />
           </SwiperSlide>
         ))}
